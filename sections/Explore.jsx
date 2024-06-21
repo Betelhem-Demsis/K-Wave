@@ -25,7 +25,7 @@ const Explore = () => (
         </>
 )} textStyles="text-center"
       />
-
+      <div className="mt-[50px] flex lg:flex-row flex-col" />
     </motion.div>
   </section>
 );
