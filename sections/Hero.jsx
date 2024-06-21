@@ -1,10 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
-// import { Button } from '../components/moving-border';
+import styles from "../styles";
+import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => (
   <section
@@ -23,9 +22,9 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <div className="flex justify-center items-center flex-col relative z-10">
+      <div className="flex justify-center items-center flex-col relative z-10 mt-[50px]">
         <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Metaverse
+          Multiverse
         </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
@@ -37,12 +36,17 @@ const Hero = () => (
         </motion.div>
       </div>
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={slideIn("right", "tween", 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <a href="#explore">
-          <div className="w-full flex justify-end sm:-mt-[70px] pr-[40px] relative z-10">
-            <button type="submit" className="sm:w-[155px] w-[100px] sm:h[155px] h-[100px] object-contain mt-40 ">GET STARTED</button>
+          <div className="w-full flex justify-center sm:-mt-[70px] pr-[40px] relative z-10">
+            <button
+              type="submit"
+              className="dark:bg-slate-900 font-bold dark:text-white border-2 border-white-700 hover:bg-slate-700 dark:border-slate-500 sm:w-[180px] w-[100px] sm:h-[60px] h-[50px] mt-[13rem] text-white text-lg rounded-lg"
+            >
+              GET STARTED
+            </button>
           </div>
         </a>
       </motion.div>
