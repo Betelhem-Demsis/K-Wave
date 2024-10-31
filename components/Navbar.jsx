@@ -7,10 +7,10 @@ import { navVariants } from "../utils/motion";
 import Link from "next/link";
 
 const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for dropdown visibility
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
 
   const handleMenuClick = () => {
-    setIsDropdownOpen(!isDropdownOpen); // Toggle dropdown visibility
+    setIsDropdownOpen(!isDropdownOpen); 
   };
 
   return (
@@ -33,17 +33,17 @@ const Navbar = () => {
               src="/menu.svg"
               alt="menu"
               className="w-[24px] h-[24px] object-contain cursor-pointer"
-              onClick={handleMenuClick} // Handle menu click
+              onClick={handleMenuClick} 
             />
             {isDropdownOpen && (
               <div className="absolute right-0 bg-gray-400 shadow-lg rounded-[10px] mt-2 z-10">
                 <Link href="/signup">
-                  <button className="block px-6 py-3 text-slate-700 hover:bg-gray-200 hover:rounded w-[150px] text-center">
+                  <button className="block px-6 py-3 text-slate-700 hover:bg-slate-500 hover:rounded w-[150px] text-center">
                     Sign Up
                   </button>
                 </Link>
                 <Link href="/login">
-                  <button className="block px-6 py-3 text-slate-700 hover:bg-gray-200 w-[150px] text-center">
+                  <button className="block px-6 py-3 text-slate-700 hover:bg-slate-500 w-[150px] text-center">
                     Log In
                   </button>
                 </Link>
