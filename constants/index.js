@@ -14,12 +14,18 @@ export const exploreWorlds = [
     imgUrl: '/webtoon.jpeg',
     title: 'webtoon',
   },
+  {
+    id: 'world-4',
+    imgUrl: '/anime.jpg',
+    title: 'anime',
+  },
+
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'choose Topic you are interested in',
+  'create Account to find people with same interest as you',
+  'find trending contents to watch',
 ];
 
 export const newFeatures = [
