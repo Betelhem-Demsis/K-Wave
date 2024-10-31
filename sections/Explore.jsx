@@ -4,11 +4,13 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles';
 import { staggerContainer } from '../utils/motion';
-import { ExploreCard, TitleText } from '../components';
+import ExploreCard from '../components/ExploreCard';
+import { TitleText } from '../components/CustomTexts';
 import { exploreWorlds } from '../constants';
 
 const Explore = () => {
   const [active, setActive] = useState('world-2');
+
 
   return (
     <section className={`${styles.paddings}`} id="explore">
